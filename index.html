@@ -1,36 +1,47 @@
 <!DOCTYPE html>
-    <head>
-        <link rel="stylesheet" href="./css/styles.css" >
-    </head>
-    <body>
-        <div class="title-div">
-            <h1 class="title">Homelab</h1>
-        </div>
-        
-        <!-- Body-->
-        <div>
-            <h3>Purpose</h3>
-            <p>This is the custom splash page for the homelab web app. So far 
-                we have a pfsense firewall installed. On our firewall we have 
-                a few ports forwarded and we have our DNS passing through cloudflare. 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homelab Web App</title>
+    <link rel="stylesheet" href="./css/styles.css">
+
+</head>
+
+<body>
+    <header class="title-div">
+        <h1 class="title">Homelab</h1>
+    </header>
+
+    <!-- Body-->
+    <main>
+        <section aria-labelledby="purpose-heading">
+            <h2 id="purpose-heading">Purpose</h2>
+            <p>This is the custom splash page for the homelab web app. So far
+                we have a pfsense firewall installed. On our firewall we have
+                a few ports forwarded and we have our DNS passing through cloudflare.
             </p>
             <p>
-                I think this is all happened with my desire to work on IT and 
+                I think this is all happened with my desire to work on IT and
                 software related activities. My background is both from IT Networking
                 and software development. Now is the time to sort of put it all together,
-                to have fun. 
+                to have fun.
             </p>
 
             <p>
-                A memory from the past came to me when typing the above. It was in Sacramento 
-                in my days as a high school student. I was in a CCNA competion for Skills USA. 
+                A memory from the past came to me when typing the above. It was in Sacramento
+                in my days as a high school student. I was in a CCNA competion for Skills USA.
                 The regional jugde was telling me about a student that was running his own
                 server at home. Not only that but this person had CISCO switches and routers
                 to practice his internetworking skills. I just thought that was the coolest thing.
-                Now that I am older, I have the means and knowlege to do the same. To develop an ecosystem 
+                Now that I am older, I have the means and knowlege to do the same. To develop an ecosystem
                 of software I create. Empashis on starting something. I have a tendancy to not finish my projects.
             </p>
-            <h3>Buzzwords</h3>
+        </section>
+
+        <section aria-labelledby="buzzwords-heading">
+            <h2 id="buzzwords-heading">Buzzwords</h2>
             <p>This is a cheeky way to keep track of the stuff I have done to the homelab.</p>
             <ul>
                 <li>PFSense Firewall software (latest) version[]</li>
@@ -42,9 +53,12 @@
                 <li>XAMP Server (Windows,Apache,MySQL,PHP)</li>
                 <li>This website is currently built using HTML and CSS.</li>
                 <li>Source control: GitHub</li>
+                <li>Used chatGPT to inprove WCAG.</li>
             </ul>
+        </section>
 
-            <h3>TODO:</h3>
+        <section aria-labelledby="todo-heading">
+            <h2 id="todo-heading">TODO:</h2>
             <p>created:1/13/2024</p>
             <ol>
                 <li>SSL for HTTPS for both Apache and Cloudflare Zero-trust tunnels.</li>
@@ -53,7 +67,19 @@
                 <li>Spin development server.</li>
                 <li>Spin up production server.</li>
                 <li>A VPN server would be fun.</li>
+                <li>Dare go for a self hosted source control server?</li>
+                <li>File Server.</li>
+                <li>Automation of IT things, think CRON jobs and WOL (wake on LAN).</li>
+                <li>Homelab Dashboard software.</li>
+                <li>This website should be WCAG 2 compliant.</li>
+                <li>I have other software ideas.</li>
+                <li>Need to create log software of the changes I am making to homelab.</li>
+                <li>A cloud music stream. Kinda small scale spotify.</li>
+                <li>Check out https://wave.webaim.org/ and check code once we have it hosted.</li>
             </ol>
-        </div>
-    </body>
+        </section>
+
+    </main>
+</body>
+
 </html>

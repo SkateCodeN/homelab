@@ -3,6 +3,41 @@
     max-width: 90%;
     
 }
+/* Sticky Navigation Bar Styles */
+nav {
+    background-color: #0044cc; /* High contrast colors */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+}
+
 .title-div{
     margin:0px auto;
     background-color: black;

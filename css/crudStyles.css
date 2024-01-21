@@ -17,3 +17,122 @@
     border-radius: 5px;
     text-align: center;
 }
+
+.log-title{
+    font-size: 3rem;
+}
+/* Nav Styles */
+/* Sticky Navigation Bar Styles */
+nav {
+    background-color: #0044cc; /* High contrast colors */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav a:hover, nav a:focus {
+    text-decoration: underline;
+}
+
+.date{
+    color:red;
+}
+
+.date-div{
+    display: flex;
+    align-items: baseline;
+}
+/* Basic Reset */
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f5f5f5; /* Light background for better readability */
+}
+
+h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+/* Textarea Styles */
+.txt-area {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical; /* Allows vertical resizing */
+}
+
+input[type="submit"] {
+    background-color: #0044cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #003399;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        width: calc(100% - 40px); /* Adjust width to account for padding */
+        padding: 20px; /* Add padding */
+        margin: 0 20px; /* Center form with margin */
+    }
+
+}

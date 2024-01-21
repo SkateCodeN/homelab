@@ -13,12 +13,10 @@
         <ul>
             <li><a href="./index.html" tabindex="0">Home</a></li>
             <li><a href="#about" tabindex="0">About</a></li>
+            <li><a href="./addLogs.php" tabindex="0">Add Log</a></li>
             <li><a href="#contact" tabindex="0">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <a href="./addLogs.php">Add Log</a>
-    </header>
     <main>
         <table>
             <tr>

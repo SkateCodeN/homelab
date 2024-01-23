@@ -27,19 +27,19 @@
                 <th>App</th>
             </tr>
             <?php
-            require './php/env/database.php';
+                require './php/env/database.php';
 
-            $sql = "SELECT * FROM dashboard.logs";
-            $stmt = $pdo->query($sql);
+                $sql = "SELECT * FROM dashboard.logs";
+                $stmt = $pdo->query($sql);
 
-            while ($row = $stmt->fetch()) {
-                echo
-                    "<tr><td>" . $row['id'] . "</td>" .
-                    "<td>" . date("m/d/Y", strtotime($row['date'])) . "</td>" .
-                    "<td>" . htmlspecialchars($row['description']) . "</td>" .
-                    "<td>" . $row['location'] . "</td>" .
-                    "<td>" . $row['application'] . "</td></tr>";
-            }
+                while ($row = $stmt->fetch()) {
+                    echo
+                        "<tr><td>" . $row['id'] . "</td>" .
+                        "<td>" . date("m/d/Y", strtotime($row['date'])) . "</td>" .
+                        "<td>" . htmlspecialchars($row['description']) . "</td>" .
+                        "<td>" . $row['location'] . "</td>" .
+                        "<td>" . $row['application'] . "</td></tr>";
+                }
             ?>
         </table>
     </main>
